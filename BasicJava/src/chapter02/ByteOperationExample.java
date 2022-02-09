@@ -7,7 +7,7 @@ public class ByteOperationExample {
 		
 		byte x = 10;
 		byte y = 20;
-		byte result2 = x + y;
-		System.out.println(result2);
+//		byte result2 = x + y;
+//		System.out.println(result2);
 	}
 }
