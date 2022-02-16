@@ -7,40 +7,58 @@ import java.util.Scanner;
 // String 타입 변수와 문자열 비교는 == 이 아닌 equals() 메소드로 비교하여야 한다.
 
 public class ExerciseExample04_4 {
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("가위바위보 게임을 시작합니다");
 		System.out.print("철수 :");
 		String var1 = scanner.next();
 		System.out.print("영희 :");
 		String var2 = scanner.next();
-		String result=null;
-		String result2=null;
-		
-		if(var1.equals("가위")) {
-			if(var2.equals("가위")) {result = "누구도"; result2 = "하지 않았습니다";}
-			else if(var2.equals("바위")) {result = "영희"; result2 = "!";}
-			else if(var2.equals("보")) {result = "철수"; result2 = "!";}
+		String result = null;
+		String result2 = null;
+
+		if (var1.equals("가위")) {
+			if (var2.equals("가위")) {
+				result = "누구도";
+				result2 = "하지 않았습니다";
+			} else if (var2.equals("바위")) {
+				result = "영희";
+				result2 = "!";
+			} else if (var2.equals("보")) {
+				result = "철수";
+				result2 = "!";
+			}
 		}
-		
-		if(var1.equals("바위")) {
-			if(var2.equals("가위")) {result = "철수"; result2 = "!";}
-			else if(var2.equals("바위")) {result = "누구도"; result2 = "하지 않았습니다";}
-			else if(var2.equals("보")) {result = "영희"; result2 = "!";}
+
+		if (var1.equals("바위")) {
+			if (var2.equals("가위")) {
+				result = "철수";
+				result2 = "!";
+			} else if (var2.equals("바위")) {
+				result = "누구도";
+				result2 = "하지 않았습니다";
+			} else if (var2.equals("보")) {
+				result = "영희";
+				result2 = "!";
+			}
 		}
-		
-		if(var1.equals("보")) {
-			if(var2.equals("가위")) {result = "영희"; result2 = "!";}
-			else if(var2.equals("바위")) {result = "철수"; result2 = "!";}
-			else if(var2.equals("보")) {result = "누구도"; result2 = "하지 않았습니다";}
+
+		if (var1.equals("보")) {
+			if (var2.equals("가위")) {
+				result = "영희";
+				result2 = "!";
+			} else if (var2.equals("바위")) {
+				result = "철수";
+				result2 = "!";
+			} else if (var2.equals("보")) {
+				result = "누구도";
+				result2 = "하지 않았습니다";
+			}
 		}
-		
-	
-	
-		System.out.println("결과 :"+result+" 승리"+result2);
+
+		System.out.println("결과 :" + result + " 승리" + result2);
 	}
-		
-		
-	}
+
+}

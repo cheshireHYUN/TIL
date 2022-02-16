@@ -11,19 +11,19 @@ public class ExerciseExample04_5 {
 		Random random = new Random();
 		int dice = random.nextInt(100) + 1;
 		Scanner scanner = new Scanner(System.in);
-		int choice=0;
-		
-		
-		while(dice!=choice) {
-		System.out.print("1부터 100까지의 수 중 하나를 선택하세요: ");
-		choice = scanner.nextInt();
-		if(dice>choice) {System.out.println("정답은 더 큰수입니다");}
-		else if (dice<choice) {System.out.println("정답은 더 작은수입니다");}
+		int choice = 0;
+
+		while (dice != choice) {
+			System.out.print("1부터 100까지의 수 중 하나를 선택하세요: ");
+			choice = scanner.nextInt();
+			if (dice > choice) {
+				System.out.println("정답은 더 큰수입니다");
+			} else if (dice < choice) {
+				System.out.println("정답은 더 작은수입니다");
+			}
 		}
 		System.out.println("정답입니다");
-		
-		
-		}
-		
+
 	}
 
+}

@@ -27,7 +27,7 @@ public class ExerciseExample04_3 {
 		int total = grade1+grade2+grade3+grade4+grade5;
 		System.out.println("ÃÑÁ¡: "+total);
 		double average = (double)total/5;
-		System.out.println("Æò±Õ: "+average);
+		System.out.printf("Æò±Õ:%.2f ",average);
 		
 		char grade;
 		if(average>=90) {grade = 'A';}
