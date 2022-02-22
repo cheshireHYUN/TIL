@@ -5,7 +5,7 @@
 //어떤 수를 0으로 나누는 것은 수학적으로 성립하지 않으므로 0을 입력하지 않는다고 가정하고 프로그램을 작성
 
 
-package chapter03;
+package Exercise;
 
 import java.util.Scanner;
 

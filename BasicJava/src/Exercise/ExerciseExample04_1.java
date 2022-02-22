@@ -2,7 +2,7 @@
 // 삼각형을 판별하는 방법은 가장 긴 변의 길이가 다른 두 변의 길이의 합보다 작으면 삼각형을 만들 수 있다.
 
 
-package chapter04;
+package Exercise;
 
 import java.util.Scanner;
 

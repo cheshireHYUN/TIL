@@ -13,7 +13,7 @@ public class Exercise05_1 {
 				max = array;
 			}
 		}
-		System.out.println("譆渤高 :"+max);
+		System.out.println("譆渤高: "+max);
 		
 		int min = max;
 		for(int array:newArray) {
@@ -22,7 +22,7 @@ public class Exercise05_1 {
 			}
 		}
 		
-		System.out.println("譆歐高 :"+min);
+		System.out.println("譆歐高: "+min);
 		
 	}
 
