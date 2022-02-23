@@ -25,7 +25,7 @@ public class PlaneExample {
 		System.out.println("최대승객수: "+plane3.getMaxNumberOfPassengers());
 		System.out.println();
 		
-		System.out.println("생상된 비행기의 수: "+Plane.getNumberOfPlanes());
+		System.out.println("생산된 비행기의 수: "+Plane.getNumberOfPlanes());
 		
 		
 	}
