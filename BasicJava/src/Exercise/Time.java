@@ -7,13 +7,13 @@ public class Time {
 	private int second;
 	
 	//»ı¼ºÀÚ
-	Time(){
+	public Time(){
 		this.hour= 00;
 		this.minute=00;
 		this.second=00;
 	}
 	
-	Time(int hour,int minute,int second){
+	public Time(int hour,int minute,int second){
 		if(hour<=23&&hour>0&&minute<=59&&minute>=0&&second<=59&&second>=0) {
 		this.hour = hour;
 		this.minute = minute;
