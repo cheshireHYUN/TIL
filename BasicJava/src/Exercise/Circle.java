@@ -1,37 +1,30 @@
 package Exercise;
 
-public class Circle {
-	
+import java.util.Arrays;
+
+public class Circle extends Shape{
+	//
 	private double radius;
-	private double x;
-	private double y;
-	private double area;
-	
-	public double getRadius(){
-		return radius;
-	}
-	public void setRadius(double radius){
+	//
+	public Circle(double radius) {
 		this.radius = radius;
 	}
 	
-	public double getX() {
-		return x;
-	}
-	public void setX(double x) {
-		this.x = x;
-	}
-	
-	public double getY() {
-		return y;
-	}
-	public void setY(double y) {
-		this.y = y;
+	//
+	@Override
+	public double area() {
+		double area=radius*radius*Math.PI;
+		return area;
 	}
 	
-	public double getArea() {
-		return Math.PI*radius*radius;
+	@Override
+	public double perimeter() {
+		double perimeter = 2*Math.PI*radius;
+		return perimeter;
 	}
-//	public void setArea() {
-//		this.area = Math.PI*radius*radius;
-//	}
+	
+	public String toString() {
+		return "도형의 종류: 원, 둘레: "+perimeter()+"cm, 넓이: "+area()+"㎠"; 
+		
+	}
 }
