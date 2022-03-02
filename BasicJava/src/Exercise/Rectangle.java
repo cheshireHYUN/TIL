@@ -30,6 +30,7 @@ public class Rectangle extends Shape {
 	public String toString() {
 		return "도형의 종류: 사각형, 둘레: "+perimeter()+"cm, 넓이: "+area()+"㎠"; 
 	}
+
 	
 
 }

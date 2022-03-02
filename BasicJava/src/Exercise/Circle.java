@@ -1,7 +1,5 @@
 package Exercise;
 
-import java.util.Arrays;
-
 public class Circle extends Shape{
 	//
 	private double radius;

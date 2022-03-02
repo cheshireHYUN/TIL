@@ -9,7 +9,7 @@ public class ShapeTest {
 		shapes[1] = new Triangle(2.0);
 		shapes[2] = new Rectangle(2.0,3.0);
 		for(Shape shape : shapes) {
-			System.out.println(shapes);
+			System.out.println(shape);
 		};
 	}
 
