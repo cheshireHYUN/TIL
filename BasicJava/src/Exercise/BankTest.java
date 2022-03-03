@@ -23,7 +23,7 @@ public class BankTest {
         Customer maxBalanceCustomer = null;
         Customer minBalanceCustomer = null;
         for (int i = 0; i < bank.getNumberOfCustomers(); i++) {
-            Customer account = bank.getCustomer(i);
+            Customer account = bank.getCustomers(i);
             if (account.getAccount().getBalance() > max) {
                 max = account.getAccount().getBalance();
                 maxBalanceCustomer = account;

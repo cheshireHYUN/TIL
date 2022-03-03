@@ -37,4 +37,9 @@ public class Human {
 		return "이름: "+name+", 나이: "+age;
 	}
 
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

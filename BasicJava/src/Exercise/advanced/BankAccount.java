@@ -1,8 +1,8 @@
-package Exercise;
+package Exercise.advanced;
 
 public class BankAccount {
 	//필드
-	private int balance; //잔액
+	protected int balance; //잔액
 	
 	//생성자
 	public BankAccount(int balance) {
@@ -39,7 +39,10 @@ public class BankAccount {
 		return false;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("%d",this.balance);
+	}
 	
 
 }
