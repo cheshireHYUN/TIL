@@ -30,7 +30,7 @@ public class Controller {
 			// case 2 : view = joinService(가운데가 대문자니까 인스턴스).join(); break;
 			case View.JOIN: view = joinService.join(); break;
 			//3
-			case View.MAIN: view = mainService.service(); break;
+			case View.MAIN: view = mainService.service0(); break;
 			}
 		}
 	}
@@ -38,9 +38,9 @@ public class Controller {
 
 
 	private int home() {
-		System.out.println("국영수학원에 오신것을 환영합니다.");
+		System.out.println("[DDIOT ADU에 오신것을 환영합니다.]");
 		System.out.println("1.로그인 \t 2.회원가입 \t 0.프로그램 종료");
-		System.out.println("번호를 입력해주세요.");
+		System.out.print("원하시는 서비스의 번호를 입력해주세요 > ");
 		int input =ScanUtil.nextInt();
 		
 		switch(input){

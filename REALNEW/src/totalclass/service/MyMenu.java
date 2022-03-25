@@ -1,6 +1,9 @@
 package totalclass.service;
 
 import java.math.BigDecimal;
+import java.util.Map;
+
+import totalclass.join.StudentDAO;
 import totalclass.util.ScanUtil;
 import totalclass.util.View;
 
@@ -13,7 +16,7 @@ public class MyMenu {
 		return instance;
 	}	
 	private StudentData studata = StudentData.getInstance();
-	
+	private StudentDAO studentDao =StudentDAO.getInstance();
 	
 	public int myMenu() {//권한별 메뉴이동. 마이메뉴가 켜지기 전에 권한을 확인하고 넣는다
 	try{
@@ -34,8 +37,10 @@ public class MyMenu {
 	
 
 	public void albaMenu() {//학생이 접근 가능한 마이메뉴
-		System.out.println("=====================My menu======================");
+		System.out.println("\n\n"+"========================[My menu]=========================");
 		System.out.println("1.내 정보 보기\t 2.개인정보 수정/탈퇴\t 3.메인으로 돌아가기");
+		System.out.println("==========================================================");
+		System.out.print("원하시는 서비스의 번호를 입력해주세요: ");
 		int input = ScanUtil.nextInt();
 		switch (input) {
 		case 1:
@@ -57,12 +62,14 @@ public class MyMenu {
 	public int openMyData() {
 		String[] keyname = {"ID","PASSWORD","이름","생일","연락처","주소","성적"};
 		String[] key = {"STU_ID","STU_PW","STU_NAME","STU_BIR","STU_TEL","STU_ADD","STU_GPA"};
-		System.out.println("====================개인정보===================");
+		MainService.login = studentDao.userInfo((String) MainService.login.get("STU_ID"));
+		System.out.println("\n====================[개인정보]===================");
 		for (int i = 0; i < 7; i++) {
-			System.out.println(keyname[i] + " : "
-					+ MainService.login.get(key[i]));
+			System.out.print(keyname[i] + " : ");
+			if(MainService.login.get(key[i])==null){System.out.println("비어있음");}
+			else {System.out.println(MainService.login.get(key[i]));}			
 		}
-		System.out.println("===========================================");
+		System.out.println("===============================================\n");
 		
 		return 0;
 	}
